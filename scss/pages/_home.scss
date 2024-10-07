@@ -1,8 +1,23 @@
 .container {
     background-color: $color-light-green;
     margin: 5rem;
-    max-width: 1200px;
+    max-width: 1300px;
     border-radius: 2rem;
+
+    @include respond(tab-land) {
+        max-width: 1000px;
+        max-height: 900px;
+    }
+
+    @include respond(tab-mini) {
+        max-width: 1030px;
+        max-height: 650px;
+    }
+
+    // @include respond(tab-port) {
+    //     max-width: 900px;
+    //     max-height: 600px;
+    // }
 }
 
 .main-section {
@@ -16,6 +31,16 @@
     background-color: $color-white-light;
     border-radius: 2rem;
     min-width: 600px;
+
+    @include respond(tab-land) {
+        min-width: 540px;
+        max-height: 810px;
+    }
+
+    @include respond(tab-mini) {
+        min-width: 450px;
+        max-height: 565px;
+    }
 }
 
 .project-card {
@@ -27,6 +52,13 @@
     flex-wrap: wrap;
     overflow-y: scroll;
     scrollbar-width: none;
+
+    @include respond(tab-mini) {
+        min-width: 450px;
+        max-height: 400px;
+        justify-content: space-around;
+        margin-left: -2.5rem;
+    }
 }
 
 .message-section {
@@ -34,8 +66,16 @@
 }
 
 .message-section__chats {
-    max-width: 550px; 
-    max-height: 655px; 
+    max-width: 400px; 
+    min-height: 655px; 
     overflow-y: scroll;
     scrollbar-width: none;
+
+    @include respond(tab-land) {
+        max-height: 500px;
+    }
+
+    @include respond(tab-mini) {
+        max-height: 400px;
+    }
 }

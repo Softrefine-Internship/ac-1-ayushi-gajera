@@ -6,7 +6,6 @@
 
 body {
   font-family: "Arial";
-  background-color: #E9E7FD;
 }
 
 .heading-primary {
@@ -17,6 +16,17 @@ body {
   position: relative;
   left: -3rem;
 }
+@media only screen and (max-width: 75em) {
+  .heading-primary {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .heading-primary {
+    font-size: 1.2rem;
+    left: 1rem;
+  }
+}
 
 .nav {
   display: flex;
@@ -25,11 +35,28 @@ body {
   justify-content: space-around;
   position: relative;
 }
+@media only screen and (max-width: 75em) {
+  .nav {
+    padding-top: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .nav__lines {
   font-size: 1.5rem;
   cursor: pointer;
   position: relative;
   left: -2.5rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .nav__lines {
+    font-size: 1.2rem;
+    left: -0.5rem;
+  }
 }
 .nav__searchbar {
   display: flex;
@@ -42,6 +69,26 @@ body {
   margin-left: -6rem;
   position: relative;
   left: -3rem;
+}
+@media only screen and (max-width: 75em) {
+  .nav__searchbar {
+    position: relative;
+    left: -2rem;
+    width: 17rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .nav__searchbar {
+    width: 15rem;
+    padding: 0.5rem 0.5rem;
+    left: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .nav__searchbar {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
 .nav__searchbar__search {
   border: none;
@@ -69,6 +116,16 @@ body {
   cursor: pointer;
   margin-right: -11rem;
 }
+@media only screen and (max-width: 75em) {
+  .nav__add {
+    margin-right: -8.5rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .nav__add {
+    margin-right: -6rem;
+  }
+}
 .nav__notification {
   cursor: pointer;
   margin-right: -11rem;
@@ -86,11 +143,40 @@ body {
   left: 1rem;
   top: 0.4rem;
 }
+@media only screen and (max-width: 75em) {
+  .nav__notification {
+    margin-right: -8.5rem;
+    padding-right: 0.8rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .nav__notification {
+    margin-right: -5.5rem;
+    padding-right: 0.8rem;
+  }
+}
 .nav__profile {
   margin-right: -4rem;
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+@media only screen and (max-width: 75em) {
+  .nav__profile {
+    margin-right: -2rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .nav__profile {
+    margin-right: -1.8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .nav__profile {
+    margin-top: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .nav__profile__img {
   cursor: pointer;
@@ -99,6 +185,12 @@ body {
   border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
+}
+@media only screen and (max-width: 75em) {
+  .nav__profile__img {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 
 .icons {
@@ -124,6 +216,24 @@ body {
 .icons :hover {
   cursor: pointer;
 }
+@media only screen and (max-width: 75em) {
+  .icons {
+    font-size: 1.2rem;
+  }
+  .icons__home {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .icons {
+    font-size: 1.1rem;
+  }
+  .icons__home {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
 
 .project {
   padding: 2.5rem;
@@ -131,6 +241,11 @@ body {
 .project__details {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 37.5em) {
+  .project__details {
+    flex-direction: column;
+  }
 }
 .project__menu {
   margin-top: 2.5rem;
@@ -149,6 +264,12 @@ body {
   list-style: none;
   display: inline;
 }
+@media only screen and (max-width: 37.5em) {
+  .project__menu__list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 .project__menu__icon {
   display: flex;
   gap: 1.2rem;
@@ -164,6 +285,27 @@ body {
   padding: 1.1rem;
   margin-top: 2.5rem;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 75em) {
+  .project-card__1 {
+    width: 13rem;
+    height: 13rem;
+    padding: 0.8rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .project-card__1 {
+    width: 12rem;
+    height: 12.5rem;
+    padding: 0.7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .project-card__1 {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
 }
 .project-card__1__nav {
   display: flex;
@@ -186,6 +328,11 @@ body {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }
+@media only screen and (max-width: 75em) {
+  .project-card__1__header p {
+    font-size: 0.8rem;
+  }
+}
 .project-card__1__progress {
   border-bottom: 1px solid whitesmoke;
   padding-bottom: 0.4rem;
@@ -199,6 +346,11 @@ body {
   font-weight: 600;
   text-align: end;
 }
+@media only screen and (max-width: 75em) {
+  .project-card__1__progress p {
+    font-size: 0.8rem;
+  }
+}
 .project-card__1__progress-bar {
   width: 100%;
   height: 0.4rem;
@@ -209,6 +361,11 @@ body {
   height: 100%;
   background-color: #00bfff;
   border-radius: 5px;
+}
+@media only screen and (max-width: 75em) {
+  .project-card__1__progress-bar {
+    height: 0.35rem;
+  }
 }
 .project-card__1__footer {
   display: flex;
@@ -263,6 +420,11 @@ body {
   background-color: rgb(188, 222, 236);
   transition: all 0.5s;
 }
+@media only screen and (max-width: 75em) {
+  .project-card__1__footer__btn {
+    padding: 0.5rem;
+  }
+}
 
 .project-card__2 {
   background-color: rgb(237, 205, 160);
@@ -272,6 +434,27 @@ body {
   padding: 1.1rem;
   margin-top: 2.5rem;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 75em) {
+  .project-card__2 {
+    width: 13rem;
+    height: 13rem;
+    padding: 0.8rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .project-card__2 {
+    width: 12rem;
+    height: 12.5rem;
+    padding: 0.7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .project-card__2 {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
 }
 .project-card__2__progress-bar-fill {
   height: 100%;
@@ -302,6 +485,11 @@ body {
   background-color: #FFFFFF;
   transition: all 0.5s;
 }
+@media only screen and (max-width: 75em) {
+  .project-card__2__footer__btn {
+    padding: 0.5rem;
+  }
+}
 
 .project-card__3 {
   background-color: #B4F1CE;
@@ -311,6 +499,27 @@ body {
   padding: 1.1rem;
   margin-top: 2.5rem;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 75em) {
+  .project-card__3 {
+    width: 13rem;
+    height: 13rem;
+    padding: 0.8rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .project-card__3 {
+    width: 12rem;
+    height: 12.5rem;
+    padding: 0.7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .project-card__3 {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
 }
 .project-card__3__progress-bar-fill {
   height: 100%;
@@ -341,6 +550,11 @@ body {
   background-color: #FFFFFF;
   transition: all 0.5s;
 }
+@media only screen and (max-width: 75em) {
+  .project-card__3__footer__btn {
+    padding: 0.5rem;
+  }
+}
 
 .project-card__4 {
   background-color: #FFD3E2;
@@ -350,6 +564,27 @@ body {
   padding: 1.1rem;
   margin-top: 2.5rem;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 75em) {
+  .project-card__4 {
+    width: 13rem;
+    height: 13rem;
+    padding: 0.8rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .project-card__4 {
+    width: 12rem;
+    height: 12.5rem;
+    padding: 0.7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .project-card__4 {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
 }
 .project-card__4__progress-bar-fill {
   height: 100%;
@@ -380,6 +615,11 @@ body {
   background-color: #FFFFFF;
   transition: all 0.5s;
 }
+@media only screen and (max-width: 75em) {
+  .project-card__4__footer__btn {
+    padding: 0.5rem;
+  }
+}
 
 .message-section__heading {
   display: flex;
@@ -388,11 +628,39 @@ body {
   padding: 1.5rem;
   border-bottom: 1px solid #c4c4c4;
 }
+@media only screen and (max-width: 75em) {
+  .message-section__heading {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .message-section__heading {
+    font-size: 0.75rem;
+  }
+}
 .message-section__heading__icons {
   display: flex;
   gap: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
+}
+@media only screen and (max-width: 75em) {
+  .message-section__heading {
+    padding: 1rem;
+  }
+  .message-section__heading__icons {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .message-section__heading {
+    padding: 0.9rem;
+  }
+  .message-section__heading__icons {
+    font-size: 0.9rem;
+    gap: 0.5rem;
+  }
 }
 
 .message-section__chats__messages {
@@ -411,12 +679,56 @@ body {
   height: 3rem;
   width: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .message-section__chats__messages__details__img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .message-section__chats__messages__details__img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+@media (phone) {
+  .message-section__chats__messages__details__img {
+    height: 2rem;
+    width: 2rem;
+  }
+}
 .message-section__chats__messages__details__name h4 {
   padding-bottom: 0.5rem;
   font-size: 1.1rem;
 }
+@media only screen and (max-width: 75em) {
+  .message-section__chats__messages__details__name h4 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .message-section__chats__messages__details__name h4 {
+    font-size: 0.9rem;
+  }
+}
+@media (phone) {
+  .message-section__chats__messages__details__name h4 {
+    font-size: 1rem;
+  }
+}
 .message-section__chats__messages__details__name p {
   font-size: 0.9rem;
+}
+@media only screen and (max-width: 75em) {
+  .message-section__chats__messages__details__name p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .message-section__chats__messages__details__name p {
+    font-size: 0.75rem;
+    min-width: 100%;
+  }
 }
 .message-section__chats__messages__details__icon {
   cursor: pointer;
@@ -437,12 +749,38 @@ body {
   height: 8rem;
   padding: 1.5rem;
 }
+@media only screen and (max-width: 75em) {
+  .message-section__chats__messages:hover {
+    height: 10rem;
+    display: flex;
+    padding-top: 2.5rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .message-section__chats__messages:hover {
+    height: 10rem;
+    display: flex;
+    padding-top: 3rem;
+  }
+}
 
 .container {
   background-color: #F3F6FD;
   margin: 5rem;
-  max-width: 1200px;
+  max-width: 1300px;
   border-radius: 2rem;
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    max-width: 1000px;
+    max-height: 900px;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .container {
+    max-width: 1030px;
+    max-height: 650px;
+  }
 }
 
 .main-section {
@@ -457,6 +795,18 @@ body {
   border-radius: 2rem;
   min-width: 600px;
 }
+@media only screen and (max-width: 75em) {
+  .project {
+    min-width: 540px;
+    max-height: 810px;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .project {
+    min-width: 450px;
+    max-height: 565px;
+  }
+}
 
 .project-card {
   max-width: 550px;
@@ -468,14 +818,32 @@ body {
   overflow-y: scroll;
   scrollbar-width: none;
 }
+@media only screen and (max-width: 62.5em) {
+  .project-card {
+    min-width: 450px;
+    max-height: 400px;
+    justify-content: space-around;
+    margin-left: -2.5rem;
+  }
+}
 
 .message-section {
   margin-top: -1.1rem;
 }
 
 .message-section__chats {
-  max-width: 550px;
-  max-height: 655px;
+  max-width: 400px;
+  min-height: 655px;
   overflow-y: scroll;
   scrollbar-width: none;
+}
+@media only screen and (max-width: 75em) {
+  .message-section__chats {
+    max-height: 500px;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .message-section__chats {
+    max-height: 400px;
+  }
 }/*# sourceMappingURL=main.css.map */
